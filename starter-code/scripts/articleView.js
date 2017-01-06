@@ -66,17 +66,26 @@ articleView.setTeasers = function() {
 
 articleView.initNewArticlePage = function() {
   // TODO: Ensure the main .tab-content area is revealed. We might add more tabs later.
+  $('.tab-content').show();
 
   // TODO: The new articles we create will be copy/pasted into our source data file.
   // Set up this "export" functionality. We can hide the export field for now, and show it once we have data to export.
-
+  $('#export-field').hide();
   // TODO: Add an event listener/handler to update the preview and the export field if any inputs change.
 };
+$('#export-field').on("change", function($('#export-field').append('#article-json');) {
+  var inputField = $(this);
+  inputField.data('oldVal', inputField.val());
 
+
+}
+
+)
 articleView.create = function() {
   // TODO: Set up a var to hold the new article we are creating.
   // Clear out the #articles element, so we can put in the updated preview
-
+  var newArticle = '';
+  $('#articles').hide();
   // TODO: Instantiate an article based on what's in the form fields:
 
   // TODO: Use our interface to the Handblebars template to put this new article into the DOM:
